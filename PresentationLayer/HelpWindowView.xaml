@@ -1,0 +1,68 @@
+﻿<Window x:Class="TBQuestGame.PresentationLayer.HelpWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TBQuestGame.PresentationLayer"
+        mc:Ignorable="d"
+        Background="PaleTurquoise"
+        Title="Help Window" Height="450" Width="800">
+    <Grid>
+        <TabControl
+            x:Name="InstructionsTab"
+            Width="400">
+            <TabItem 
+                Header="Instructions"
+                x:Name="InstructionInfoTabItem" 
+                Height="30"
+                Width="100"
+                VerticalAlignment="Bottom">
+                <TextBox
+                    FontSize="16"
+                    IsReadOnly="True"
+                    TextWrapping="Wrap"
+                    Text="  The main goal behind the game is to explore the hardware store looking for materials to help with your home project. &#x0a;&#x0a; While looking for materials you will run into friendly and not so friendly NPCs. &#x0a;&#x0a; You should go through the game locations (Isles) and rid the hardware store of unfriendly NPCs. &#x0a;&#x0a; This can be done by picking up weapons along the way to either attack or defend yourself from the angry Townies (NPCs)." >
+                </TextBox>
+            </TabItem>
+            <TabItem
+                Header="Traveling"
+                x:Name="TravelingInfoTabItem" 
+                Height="30"
+                Width="100"
+                VerticalAlignment="Bottom">
+                <TextBox
+                    FontSize="16"
+                    IsReadOnly="True"
+                    TextWrapping="Wrap"
+                    Text="  To travel back and forth between locations there are two buttons located under the Location Information section. &#x0a;&#x0a;   The two buttons are labeled 'Previous Isle' and 'Next Isle'. &#x0a;&#x0a;   It is important to click on the tabs under the location so you can see the different items and NPCs located in each location. &#x0a;&#x0a;  When traveling to different locations and picking up items you can view your inventory under the Inventory section. ">
+                </TextBox>
+            </TabItem>
+            <TabItem
+                Header="Battle"
+                x:Name="BattleInfoTabItem" 
+                Height="30"
+                Width="100"
+                VerticalAlignment="Bottom">
+                <TextBox
+                    FontSize="16"
+                    IsReadOnly="True"
+                    TextWrapping="Wrap"
+                    Text="  Before battling you should speak to an NPC to see if they are friendly or not. &#x0a;&#x0a; If the NPC is not friendly there are three options you can select, 'Attack', 'Defend', and 'Retreat'. &#x0a;&#x0a;  It is important to have a weapon while battling or else you will most likely lose every battle. &#x0a;&#x0a;    Weapons are placed in different isles (locations) as the game goes on.">
+                </TextBox>
+            </TabItem>
+            <TabItem
+                Header="Buttons"
+                x:Name="ButtonInfoTabItem" 
+                Height="30"
+                Width="96"
+                VerticalAlignment="Bottom">
+                <TextBox
+                    FontSize="16"
+                    IsReadOnly="True"
+                    TextWrapping="Wrap"
+                    Text="                              Button Actions&#x0a;&#x0a;Previous Isle = Move to the previous location.&#x0a;Next Isle = Move to next location.&#x0a;Pick Up = Selected game item is picked up.&#x0a;Drop = Selected inventory item is dropped.&#x0a;Speak To = Speak to selected NPC.&#x0a;Attack = Begin battle with NPC.&#x0a;Defend = Defend against NPC attack.&#x0a;Retreat = Run away from the NPC.&#x0a;Help = Opens help window.&#x0a;Quit = Ends the game and application.">
+                </TextBox>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
