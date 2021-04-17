@@ -86,7 +86,7 @@ namespace TBQuestGame.Models
                 }
                 else if (_health <= 0)
                 {
-                    _lives--;
+                    Lives--;
                     _health = 100;
                     
                 }

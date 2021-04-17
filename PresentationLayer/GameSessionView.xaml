@@ -268,8 +268,7 @@
                         Content="Current Location Information"
                         Style="{StaticResource MainPanelLabelStyle}"/>
                     <ScrollViewer HorizontalScrollBarVisibility="Auto" Height="50">
-                        <TextBlock 
-                        
+                        <TextBlock
                         x:Name="CurrentLocationTextBlock"
                         TextWrapping="Wrap"
                         Text="{Binding Map.CurrentLocation.Description}" 
@@ -315,11 +314,12 @@
                             x:Name="NpcsInfoTabItem">
                             <DataGrid 
                                 x:Name="LocationNpcsDataGrid"
-                                Height="150"
+                                Height="75"
                                 ItemsSource="{Binding Map.CurrentLocation.Npcs}" 
                                 SelectedItem="{Binding CurrentNpc}"
                                 AutoGenerateColumns="False"
-                                HeadersVisibility="Column">
+                                HeadersVisibility="Column"
+                                VerticalScrollBarVisibility="Auto">
                                 <DataGrid.Columns>
                                     <DataGridTextColumn 
                                         Header="Description" 
@@ -390,6 +390,7 @@
                             TextWrapping="Wrap" 
                             Text="{Binding CurrentLocationInformation}" 
                             VerticalAlignment="Top" 
+                            FontSize="20"
                             Height="200" Width="270"/>
                         <StackPanel 
                             Grid.Column="1" 
